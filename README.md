@@ -1,4 +1,4 @@
-# IEEE MADHACK 4.O Concept Design
+# IEEE MADHACK 4.0 Concept Design
 
 Click here to see live website: [Open Website](https://ieee-ucsc-madhack-4-0.vercel.app/)
 

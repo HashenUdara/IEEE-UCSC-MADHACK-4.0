@@ -8,7 +8,7 @@ export default function Home() {
     <div>
       <div className=" relative min-h-screen w-full">
         <h1 className=" text-7xl pt-24  px-20 max-w-4xl font-geist-sans font-semibold ">
-          Unleashing Innovation and Creativity in Mobile App Development.{" "}
+          {/* Unleashing Innovation and Creativity in Mobile App Development.{" "} */}
         </h1>
         <Image
           src={HeroImg}
@@ -26,11 +26,6 @@ export default function Home() {
       <Timeline />
       <FAQ />
       <CTA headline="Reach out to us today" />
-      accusamus explicabo voluptatem doloribus esse magni quos soluta voluptates
-      blanditiis vero quaerat dolores, doloremque voluptatibus cumque odio,
-      ducimus praesentium? Lorem ipsum dolor sit amet, consectetur adipisicing
-      elit. Consectetur ad minus accusamus explicabo voluptatem doloribus esse
-      magni quos soluta voluptates blanditiis vero quaerat dolores, doloremque
     </div>
   );
 }

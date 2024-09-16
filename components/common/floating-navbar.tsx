@@ -88,77 +88,78 @@ export const FloatingNav = ({
           duration: 0.2,
         }}
         className={cn(
-          "flex max-w-[calc(100%-1.5rem)]  md:max-w-fit fixed top-4 inset-x-0 mx-auto    bg-muted/80 backdrop-blur-lg rounded-2xl  shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] pr-2 pl-8 py-2  items-center  justify-between space-x-4",
+          "flex max-w-full  fixed top-0 inset-x-0 mx-auto  bg-background/70 border-b backdrop-blur-xl  shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] pr-2 pl-8 py-2  items-center  justify-between space-x-4",
           className
         )}
       >
-        <div>
-          <Link href="/" className="logo font-alt">
-            <Image
-              src={Logo}
-              alt="Clofel Tech"
-              width={75}
-              className="mr-4 w-20"
-              height={75}
-            />
-          </Link>
-        </div>
+        <div className=" flex items-center ">
+          <div>
+            <Link href="/" className="logo font-alt">
+              <Image
+                src={Logo}
+                alt="MADHACK"
+                width={75}
+                className="mr-4 w-20"
+                height={75}
+              />
+            </Link>
+          </div>
+          <NavigationMenu className="hidden md:block">
+            <NavigationMenuList>
+              {navItems.map((item, index) =>
+                item.subItems == undefined ? (
+                  <NavigationMenuItem key={index}>
+                    <Link href={item.link} legacyBehavior passHref>
+                      <NavigationMenuLink
+                        className={navigationMenuTriggerStyle()}
+                      >
+                        {item.name}
+                      </NavigationMenuLink>
+                    </Link>
+                  </NavigationMenuItem>
+                ) : (
+                  <NavigationMenuItem key={index}>
+                    <NavigationMenuTrigger>{item.name}</NavigationMenuTrigger>
+                    <NavigationMenuContent>
+                      <ul className="grid gap-3 p-4  bg-muted  rounded-2xl  shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                        <li className="row-span-3">
+                          <NavigationMenuLink asChild>
+                            <a
+                              className="flex h-full w-full select-none flex-col justify-end rounded-xl bg-gradient-to-b from-background/30 to-background p-4 no-underline outline-none focus:shadow-md"
+                              href="/"
+                            >
+                              <Image
+                                src={Logo}
+                                alt="xleron Tech"
+                                width={40}
+                                className="mr-4 mb-4 w-24"
+                                height={40}
+                              />
 
-        <NavigationMenu className="hidden md:block">
-          <NavigationMenuList>
-            {navItems.map((item, index) =>
-              item.subItems == undefined ? (
-                <NavigationMenuItem key={index}>
-                  <Link href={item.link} legacyBehavior passHref>
-                    <NavigationMenuLink
-                      className={navigationMenuTriggerStyle()}
-                    >
-                      {item.name}
-                    </NavigationMenuLink>
-                  </Link>
-                </NavigationMenuItem>
-              ) : (
-                <NavigationMenuItem key={index}>
-                  <NavigationMenuTrigger>{item.name}</NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <ul className="grid gap-3 p-4  bg-muted  rounded-2xl  shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-                      <li className="row-span-3">
-                        <NavigationMenuLink asChild>
-                          <a
-                            className="flex h-full w-full select-none flex-col justify-end rounded-xl bg-gradient-to-b from-background/30 to-background p-4 no-underline outline-none focus:shadow-md"
-                            href="/"
+                              <p className="text-sm leading-tight text-muted-foreground">
+                                Experience the power of technology tailored to
+                                your unique needs and goals
+                              </p>
+                            </a>
+                          </NavigationMenuLink>
+                        </li>
+                        {item.subItems.map((subitem) => (
+                          <ListItem
+                            key={subitem.name}
+                            href={subitem.link}
+                            title={subitem.name}
                           >
-                            <Image
-                              src={Logo}
-                              alt="MADHACK"
-                              width={250}
-                              className="mr-4 mb-4 w-24"
-                              height={250}
-                            />
-
-                            <p className="text-sm leading-tight text-muted-foreground">
-                              Experience the power of technology tailored to
-                              your unique needs and goals
-                            </p>
-                          </a>
-                        </NavigationMenuLink>
-                      </li>
-                      {item.subItems.map((subitem) => (
-                        <ListItem
-                          key={subitem.name}
-                          href={subitem.link}
-                          title={subitem.name}
-                        >
-                          {subitem.description}
-                        </ListItem>
-                      ))}
-                    </ul>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
-              )
-            )}
-          </NavigationMenuList>
-        </NavigationMenu>
+                            {subitem.description}
+                          </ListItem>
+                        ))}
+                      </ul>
+                    </NavigationMenuContent>
+                  </NavigationMenuItem>
+                )
+              )}
+            </NavigationMenuList>
+          </NavigationMenu>
+        </div>
         <div className=" flex items-center space-x-2">
           <Link
             className={cn(
@@ -167,7 +168,7 @@ export const FloatingNav = ({
             )}
             href={"/contact"}
           >
-            Contact us
+            Let{"'"}s talk
           </Link>
           <MobileNav navItems={navItems} />
         </div>

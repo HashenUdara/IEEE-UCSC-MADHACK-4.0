@@ -5,12 +5,15 @@ import { FloatingNav } from "@/components/common/floating-navbar";
 import { navItems } from "@/data/nav-items";
 
 const geistSans = localFont({
+  // src: "./fonts/NeueMachina.woff",
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
-  weight: "100 900",
+  weight: "100 400 500 600 900",
 });
 const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
+  // src: "./fonts/GeistMonoVF.woff",
+  src: "./fonts/NeueMachina.woff",
+  // src: "./fonts/GeistVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
 });
@@ -28,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased  font-geist-mono`}
       >
         <FloatingNav navItems={navItems} />
         <main className=" container mx-auto flex-grow min-h-screen">

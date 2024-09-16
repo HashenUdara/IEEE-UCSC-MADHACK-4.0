@@ -1,5 +1,7 @@
 # IEEE MADHACK 4.O Concept Design
 
+Click here to see live website: [Open Website](https://ieee-ucsc-madhack-4-0.vercel.app/)
+
 - Name: Hashen Udara
 - Email: emhashenudara@gmail.com
 - Registration number: 2023/IS/106

@@ -8,7 +8,7 @@ import {
 } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "@/public/img/logo/logo.svg";
+import Logo from "@/public/img/logo.png";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "../ui/button";
 import {
@@ -97,9 +97,9 @@ export const FloatingNav = ({
             <Image
               src={Logo}
               alt="Clofel Tech"
-              width={40}
-              className="mr-4 w-16"
-              height={40}
+              width={75}
+              className="mr-4 w-20"
+              height={75}
             />
           </Link>
         </div>
@@ -130,10 +130,10 @@ export const FloatingNav = ({
                           >
                             <Image
                               src={Logo}
-                              alt="Clofel Tech"
-                              width={40}
+                              alt="MADHACK"
+                              width={250}
                               className="mr-4 mb-4 w-24"
-                              height={40}
+                              height={250}
                             />
 
                             <p className="text-sm leading-tight text-muted-foreground">

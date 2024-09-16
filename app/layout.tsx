@@ -31,7 +31,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <FloatingNav navItems={navItems} />
-        {children}
+        <main className=" container mx-auto flex-grow min-h-screen">
+          {children}
+        </main>
       </body>
     </html>
   );

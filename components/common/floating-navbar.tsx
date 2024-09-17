@@ -161,13 +161,7 @@ export const FloatingNav = ({
           </NavigationMenu>
         </div>
         <div className=" flex items-center space-x-2">
-          <Link
-            className={cn(
-              buttonVariants({ variant: "outline" }),
-              " bg-transparent rounded-xl border border-white/10"
-            )}
-            href={"#"}
-          >
+          <Link className={cn(buttonVariants({}))} href={"#"}>
             Register Now
           </Link>
           <MobileNav navItems={navItems} />

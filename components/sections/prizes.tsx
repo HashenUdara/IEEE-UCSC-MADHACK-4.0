@@ -12,7 +12,7 @@ const Prizes = ({
   return (
     <section>
       <div className="relative isolate overflow-hidden bg-background  px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
-        <div className="mx-auto grid max-w-2xl grid-cols-1  lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start">
+        <div className="mx-auto   flex flex-col-reverse sm:grid max-w-2xl grid-cols-1  lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start">
           <div className="mx-auto w-full space-y-20 max-w-7xl text-right sm:px-8">
             {content.map((stat, index) => (
               <RevealStats key={index} name={stat.name} value={stat.value} />

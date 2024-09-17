@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 export function CTA() {
   return (
     <section className=" bg-background  border border-dashed">
-      <div className=" shadow-2xl relative  z-20  shadow-background bg-background py-12 sm:py-32  px-6 lg:px-20 rounded-3xl ">
+      <div className=" shadow-2xl relative  z-20  bg-background py-12 sm:py-32  px-6 lg:px-20 rounded-3xl ">
         <div className="w-full max-w-screen-2xl mx-auto   space-y-12   sm:space-y-0  md:grid  grid-cols-12">
           <div className=" col-span-7">
             <RevealMotion>

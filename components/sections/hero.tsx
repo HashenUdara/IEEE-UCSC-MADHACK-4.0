@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import HeroImg from "@/public/img/hero2.jpeg";
 import { Button } from "../ui/button";
+import Parallax from "../common/parallax";
 
 const Hero = () => {
   return (
@@ -36,6 +37,7 @@ const Hero = () => {
         width={1200}
         className=" absolute  inset-0  -z-20 object-cover w-full h-full"
       />
+
       {/* <div className=" absolute inset-0 h-full w-full  bg-gradient-to-r from-black"></div> */}
       <div className=" absolute inset-0 h-full w-full  -z-10 bg-gradient-to-t  from-background"></div>
     </section>

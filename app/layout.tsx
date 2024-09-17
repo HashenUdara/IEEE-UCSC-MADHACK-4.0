@@ -5,7 +5,6 @@ import { FloatingNav } from "@/components/common/floating-navbar";
 import { navItems } from "@/data/nav-items";
 
 const geistSans = localFont({
-  // src: "./fonts/NeueMachina.woff",
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 400 500 600 900",
@@ -39,7 +38,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${machinaSans.variable} antialiased  font-geist-mono`}
       >
         <FloatingNav navItems={navItems} />
-        <main className="  mx-auto flex-grow min-h-screen">{children}</main>
+        <main className="mx-auto flex-grow min-h-screen">{children}</main>
       </body>
     </html>
   );

@@ -47,7 +47,7 @@ const content: FAQItem[] = [
 
 const FAQ = () => {
   return (
-    <section className="overflow-hidden relative  px-6  py-24 sm:py-32">
+    <section className="overflow-hidden relative bg-background  px-6  py-24 sm:py-32">
       <div className="mx-auto  px-6 lg:px-8 gap-8 lg:grid grid-cols-2">
         <div className=" space-y-6">
           <h3 className=" text-4xl font-geist-sans   font-medium tracking-tight sm:text-6xl">

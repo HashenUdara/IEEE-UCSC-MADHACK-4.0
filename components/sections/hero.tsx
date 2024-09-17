@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import HeroImg from "@/public/img/hero2.jpeg";
 import { Button } from "../ui/button";
-import Parallax from "../common/parallax";
 
 const Hero = () => {
   return (

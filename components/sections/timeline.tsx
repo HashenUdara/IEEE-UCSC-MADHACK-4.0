@@ -10,12 +10,12 @@ const Timeline = () => {
             <div className="sm:min-h-screen flex  max-w-xl flex-col mt-12 ">
               <RevealMotion>
                 <p className=" text-xl text-brand-00">MADHACK Event Timeline</p>
-                <h3 className="mt-4 sm:mt-6 font-semibold tracking-tight text-3xl sm:text-6xl">
+                <h3 className="mt-4 sm:mt-6 font-semibold tracking-tighter text-3xl sm:text-6xl">
                   Your Journey from Awareness to the Final Hackathon
                 </h3>
               </RevealMotion>
               <RevealMotion delay={0.3}>
-                <p className=" mt-8 text-lg   text-muted-foreground">
+                <p className=" mt-8 text-lg   font-geist-sans text-muted-foreground">
                   Follow the roadmap of MADHACK, starting with our awareness
                   session, leading into design workshops, Flutter training, and
                   culminating in the grand onsite hackathon. Stay tuned for

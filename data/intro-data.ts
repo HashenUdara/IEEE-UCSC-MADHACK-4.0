@@ -1,5 +1,5 @@
-import featuredImg1 from "@/public/img/hero2.png";
-import featuredImg2 from "@/public/img/hero.webp";
+import featuredImg1 from "@/public/img/pic1.jpg";
+import featuredImg2 from "@/public/img/pic2.jpg";
 
 export const IntroductionData = [
   {

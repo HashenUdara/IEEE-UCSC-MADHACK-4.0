@@ -1,5 +1,6 @@
-import { CTA } from "@/components/common/cta";
+import { CTA } from "@/components/sections/cta";
 import FAQ from "@/components/sections/faq";
+import Footer from "@/components/sections/footer";
 import Hero from "@/components/sections/hero";
 import Introduction from "@/components/sections/introduction";
 import Prizes from "@/components/sections/prizes";
@@ -15,7 +16,8 @@ export default function Home() {
         <Timeline />
         <Prizes content={prizes} />
         <FAQ />
-        <CTA headline="Reach out to us today" />
+        <CTA />
+        <Footer />
       </div>
     </div>
   );

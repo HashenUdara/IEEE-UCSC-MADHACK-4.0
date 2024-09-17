@@ -6,8 +6,8 @@ import { Button } from "../ui/button";
 const Hero = () => {
   return (
     <section className=" relative flex items-end min-h-screen w-full">
-      <div className="container  flex justify-between mx-auto pb-24 px-10">
-        <div>
+      <div className="container  grid grid-cols-5 mx-auto pb-16 px-10">
+        <div className=" col-span-3">
           <div className=" space-y-4  text-xl font-geist-sans tracking-tight ">
             Sri Lanka{"'"}s first ever App Development Hackerthon{" "}
           </div>
@@ -16,11 +16,17 @@ const Hero = () => {
           </h1>
           <Button>Register Now</Button>
         </div>
-        <div className="font-geist-sans text-lg  max-w-xl text-right">
-          Unleash your creativity and skills in MADHACK 4.0, the premier mobile
-          development hackathon. Whether you’re a beginner or a seasoned
-          developer, this is your chance to learn, collaborate, and build
-          innovative mobile solutions for real-world challenges.
+        <div className=" flex col-span-2  divide-y  divide-dashed divide-border  flex-col justify-items-end  w-full justify-end">
+          <div className="font-geist-sans text-lg  mb-2  text-right">
+            Unleash your creativity and skills in MADHACK 4.0, the premier
+            mobile development hackathon. Whether you’re a beginner or a
+            seasoned developer, this is your chance to learn, collaborate, and
+            build innovative mobile solutions for real-world challenges.
+          </div>
+
+          <p className="  pt-2 font-geist-sans text-right font-semibold">
+            Organized By IEEE Student Branch of UCSC
+          </p>
         </div>
       </div>
 

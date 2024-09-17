@@ -1,35 +1,32 @@
 export const navItems = [
   {
-    name: "Services",
-    link: "/#services",
+    name: "Home",
+    link: "/#home",
     scroll: true,
   },
   {
-    name: "Solutions",
-    link: "#",
-    subItems: [
-      {
-        name: "Glass Manufacturing",
-        description:
-          "Your Seamless Transition to a Data and AI-Powered Glass Factory",
-        link: "/solutions/glass-manufacturing",
-      },
-      {
-        name: "Metal Manufacturing",
-        description:
-          "Your Step-by-step Transition to a Data and AI-Powered Metal Factory",
-        link: "/solutions/metal-manufacturing",
-      },
-      {
-        name: "Component Assembly",
-        description:
-          "Your Step-by-step Transition to a Data and AI-driven Component Assembly",
-        link: "/solutions/component-assembly",
-      },
-    ],
+    name: "About",
+    link: "/#about",
+    scroll: true,
   },
   {
-    name: "Careers",
-    link: "/careers",
+    name: "Timeline",
+    link: "/#timeline",
+    scroll: true,
+  },
+  {
+    name: "Prizes",
+    link: "/#prizes",
+    scroll: true,
+  },
+  {
+    name: "FAQs",
+    link: "/#faqs",
+    scroll: true,
+  },
+  {
+    name: "Contact Us",
+    link: "/#contact",
+    scroll: true,
   },
 ];

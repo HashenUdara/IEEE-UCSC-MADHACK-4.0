@@ -166,9 +166,9 @@ export const FloatingNav = ({
               buttonVariants({ variant: "outline" }),
               " bg-transparent rounded-xl border border-white/10"
             )}
-            href={"/contact"}
+            href={"#"}
           >
-            Let{"'"}s talk
+            Register Now
           </Link>
           <MobileNav navItems={navItems} />
         </div>

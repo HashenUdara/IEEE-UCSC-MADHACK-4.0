@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div>
       <Hero />
-      <div className="container">
+      <div className="container mx-auto">
         <Timeline />
         <FAQ />
         <CTA headline="Reach out to us today" />

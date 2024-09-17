@@ -1,14 +1,27 @@
 import React from "react";
 import Image from "next/image";
 import HeroImg from "@/public/img/hero2.jpeg";
+import { Button } from "../ui/button";
 
 const Hero = () => {
   return (
     <section className=" relative flex items-end min-h-screen w-full">
-      <div className="container mx-auto pb-24 pl-10">
-        <h1 className=" text-7xl   max-w-4xl font-geist-sans font-semibold ">
-          Unleashing Innovation and Creativity in Mobile App Development.{" "}
-        </h1>
+      <div className="container  flex justify-between mx-auto pb-24 px-10">
+        <div>
+          <div className=" space-y-4  text-xl font-geist-sans tracking-tight ">
+            Sri Lanka{"'"}s first ever App Development Hackerthon{" "}
+          </div>
+          <h1 className=" text-8xl  mt-2  max-w-4xl font-machina-sans font-bold ">
+            MADHACK 4.0
+          </h1>
+          <Button>Register Now</Button>
+        </div>
+        <div className="font-geist-sans text-lg  max-w-xl text-right">
+          Unleash your creativity and skills in MADHACK 4.0, the premier mobile
+          development hackathon. Whether you’re a beginner or a seasoned
+          developer, this is your chance to learn, collaborate, and build
+          innovative mobile solutions for real-world challenges.
+        </div>
       </div>
 
       <Image

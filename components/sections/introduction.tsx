@@ -48,13 +48,13 @@ export default function Introduction({
     img: StaticImageData;
   }[];
 }) {
-  return content.map((item, index) => (
-    <section key={index} id="about">
+  return content.map((item) => (
+    <>
       <IntroductionModel
         headline={item.name}
         description={item.description}
         img={item.img}
       />
-    </section>
+    </>
   ));
 }

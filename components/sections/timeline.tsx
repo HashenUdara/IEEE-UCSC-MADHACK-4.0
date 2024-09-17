@@ -3,7 +3,7 @@ import TimelineSteps from "./timeline-steps";
 
 const Timeline = () => {
   return (
-    <section>
+    <section id="timeline">
       <div className="relative isolate overflow-hidden bg-background   px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
         <div className="mx-auto grid max-w-2xl grid-cols-1  lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start">
           <div className=" sm:px-12  sticky top-0 overflow-hidden">

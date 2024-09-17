@@ -5,7 +5,7 @@ import { Button } from "../ui/button";
 
 const Hero = () => {
   return (
-    <section className=" relative flex items-end min-h-screen w-full">
+    <section id="home" className=" relative flex items-end min-h-screen w-full">
       <div className="container block sm:grid grid-cols-5 mx-auto pb-16 px-10">
         <div className=" col-span-3">
           <div className=" space-y-4  text-xl font-geist-sans tracking-tight ">
